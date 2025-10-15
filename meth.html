@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LSUT</title>
+    <title>Document</title>
 <style>
     body {
         font-family: 'Ubuntu', sans-serif;
@@ -144,15 +144,35 @@
     <p>What you will need:</p>
     <ul>
         <li>VCH341A Programmer (here) </li>
-        <li>----------------</li>
+        ----------------
         <li>Computer with Windows or Linux</li>
-        <li>----------------</li>
-        <li>Software: CH341A Programmer (Can be found here, and driver can be found here)</li>
+        ----------------
+        <li>Software: CH341A Programmer (Can be found here, and driver can be found here, And the opencore boot can be found (here))</li>
         <div id="waring">WARNING: Check if you have the right board (here), as on the dedede board. The SPI chip was meant for a 6x5 pogo-pin probe, which i could only find for 30 bucks on a chinsese website</div>
         <hr>
         <h4>Steps:</h4>
         <ol>
             <li>to check which board you have, go to (chrome://version) and one the 4th or 5th line, you will see 'platform' and at the end of platform you will see your board (i.e dedede,octopus, nissa)</li>
+            <p></p>
+            <li>Download the software, drivers and .Rom from the links above on your computer running windows or linux</li>
+            <p></p>
+            <li>Get Your chromebook, turn it upside down, and unscrew your scewrs. open the back up and find your motherboard, once you find your mother board solwly unscrew the screws and unplug the Display port, Audio port, Battery port, and others. </li>
+            <p></p>
+            <li>Once you have your motherboard out, find the SPI chip on the back of the Board (it will be a small black square with 8 legs on the sides and will probaly have the word "winbond or somthing along those lines")</li>
+            <p></p>
+            <li>Once you find the SPI chip, you need to connect the VCH341A programmer (here is a link on how to construct the programmer) to the SPI chip. once you have constructed it, open the Program, and plug in your VCH341A Programmer into the usb port on the computer running linux. and put the cilp on the SPI chip.</li>
+            <p></p>
+            <li>Once you have the clip on the SPI chip, go to the program, and click on "detect chip" if it detects the chip, you are good to go. If it does not detect the chip, make sure the clip is on properly and that you have the right.</li>
+            <p></p>
+            <li>Once you have the chip detected, click on "open file" and select the .rom file you downloaded earlier.</li>
+            <p></p>
+            <li>Once you have the .rom file loaded, click on "Program" and wait for it to finish.</li>
+            <p></p>
+            <li>Once it is done, unplug the clip from the SPI chip, and put the motherboard back into the chromebook, and screw everything back in.</li>
+            <p></p>
+            <li>Turn on your chromebook, and you should see the Opencore boot screen, once it boots up. you need to press ESC. and you will be brought to a menu. and download an ISO, flash to a USB and boot from it, and your good too go.</li>
+            <p></p>
+        </ol>
 
   </div>
 </details>
